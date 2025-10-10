@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma para ONGs - Conectando pessoas a causas sociais">
+    <title>ONG Solidária - Página Inicial</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ONG Solidária</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Transformando vidas através da solidariedade</h2>
+            <p>Há mais de 10 anos atuando em comunidades carentes</p>
+            <a href="projetos.html" class="cta-button">Conheça nossos projetos</a>
+        </section>
+
+        <section class="sobre">
+            <h2>Sobre Nossa Organização</h2>
+            <article>
+                <h3>Nossa Missão</h3>
+                <p>Promover o desenvolvimento social através de projetos educacionais, de saúde e geração de renda em comunidades vulneráveis.</p>
+            </article>
+            <article>
+                <h3>Nossa Visão</h3>
+                <p>Ser referência em transformação social no Brasil até 2030, impactando positivamente a vida de 1 milhão de pessoas.</p>
+            </article>
+            <article>
+                <h3>Nossos Valores</h3>
+                <ul>
+                    <li>Transparência</li>
+                    <li>Comprometimento</li>
+                    <li>Solidariedade</li>
+                    <li>Sustentabilidade</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="contato">
+            <h2>Entre em Contato</h2>
+            <address>
+                <p>Endereço: Rua das Flores, 123 - Centro, São Paulo - SP</p>
+                <p>Telefone: (11) 9999-9999</p>
+                <p>Email: contato@ongsolidaria.org.br</p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

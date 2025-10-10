@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça nossos projetos sociais e saiba como participar">
+    <title>ONG Solidária - Nossos Projetos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ONG Solidária</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-projetos">
+            <h1>Nossos Projetos Sociais</h1>
+            <p>Conheça nossas iniciativas e descubra como você pode fazer a diferença</p>
+        </section>
+
+        <section class="projetos-lista">
+            <article class="projeto">
+                <h2>Educação para Todos</h2>
+                <p>Projeto que oferece reforço escolar e atividades extracurriculares para crianças e adolescentes.</p>
+                <h3>Como ser voluntário:</h3>
+                <ul>
+                    <li>Professores de diversas disciplinas</li>
+                    <li>Monitores para atividades recreativas</li>
+                    <li>Coordenadores pedagógicos</li>
+                </ul>
+            </article>
+
+            <article class="projeto">
+                <h2>Alimentação Solidária</h2>
+                <p>Distribuição de cestas básicas e refeições para famílias em situação de vulnerabilidade.</p>
+                <h3>Como ser voluntário:</h3>
+                <ul>
+                    <li>Ajudantes na organização e distribuição</li>
+                    <li>Cozinheiros</li>
+                    <li>Motoristas para entregas</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="como-doar">
+            <h2>Como Fazer Doações</h2>
+            <article>
+                <h3>Doação Financeira</h3>
+                <p>Transferência bancária para:</p>
+                <p>Banco: 001 • Agência: 1234 • Conta: 56789-0</p>
+                <p>CNPJ: 12.345.678/0001-90</p>
+            </article>
+            <article>
+                <h3>Doação de Materiais</h3>
+                <p>Aceitamos:</p>
+                <ul>
+                    <li>Roupas em bom estado</li>
+                    <li>Alimentos não perecíveis</li>
+                    <li>Material escolar</li>
+                    <li>Produtos de higiene</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
