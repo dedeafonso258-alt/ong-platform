@@ -7,60 +7,190 @@
     <title>ONG Solidária - Página Inicial</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>ONG Solidária</h1>
-            </div>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </nav>
+<body class="main-container">
+    <!-- Header Atualizado -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>ONG <span>Solidária</span></h1>
+                </div>
+                
+                <!-- Menu Hambúrguer -->
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Navegação -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projetos.html" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadastro.html" class="nav-link">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projetos.html#doar" class="btn btn-donate">Doar Agora</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Transformando vidas através da solidariedade</h2>
-            <p>Há mais de 10 anos atuando em comunidades carentes</p>
-            <a href="projetos.html" class="cta-button">Conheça nossos projetos</a>
+        <!-- Hero Section Atualizada -->
+        <section class="hero" style="background: linear-gradient(135deg, var(--primary-500), var(--primary-700)); color: white; padding: var(--space-12) 0; text-align: center;">
+            <div class="container">
+                <div class="grid">
+                    <div class="col-span-12 text-center">
+                        <h1 style="font-size: var(--font-size-5xl); margin-bottom: var(--space-4);">
+                            Transformando vidas através da solidariedade
+                        </h1>
+                        <p class="lead" style="font-size: var(--font-size-xl); margin-bottom: var(--space-6);">
+                            Há mais de 10 anos atuando em comunidades carentes
+                        </p>
+                        <a href="projetos.html" class="btn btn-secondary btn-lg">
+                            Conheça nossos projetos
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="sobre">
-            <h2>Sobre Nossa Organização</h2>
-            <article>
-                <h3>Nossa Missão</h3>
-                <p>Promover o desenvolvimento social através de projetos educacionais, de saúde e geração de renda em comunidades vulneráveis.</p>
-            </article>
-            <article>
-                <h3>Nossa Visão</h3>
-                <p>Ser referência em transformação social no Brasil até 2030, impactando positivamente a vida de 1 milhão de pessoas.</p>
-            </article>
-            <article>
-                <h3>Nossos Valores</h3>
-                <ul>
-                    <li>Transparência</li>
-                    <li>Comprometimento</li>
-                    <li>Solidariedade</li>
-                    <li>Sustentabilidade</li>
-                </ul>
-            </article>
+        <!-- Sobre Nós com Grid -->
+        <section class="sobre container" style="padding: var(--space-8) 0;">
+            <div class="grid-12">
+                <div class="col-span-12 text-center">
+                    <h2>Sobre Nossa Organização</h2>
+                    <p class="lead">Trabalhamos por um mundo mais justo e solidário</p>
+                </div>
+            </div>
+
+            <div class="grid-3" style="margin-top: var(--space-6);">
+                <!-- Card Missão -->
+                <article class="card card-featured">
+                    <div class="card-header">
+                        <h3 class="card-title">Nossa Missão</h3>
+                        <span class="badge badge-primary">Propósito</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Promover o desenvolvimento social através de projetos educacionais, de saúde e geração de renda em comunidades vulneráveis.</p>
+                    </div>
+                </article>
+
+                <!-- Card Visão -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Nossa Visão</h3>
+                        <span class="badge badge-secondary">Futuro</span>
+                    </div>
+                    <div class="card-body">
+                        <p>Ser referência em transformação social no Brasil até 2030, impactando positivamente a vida de 1 milhão de pessoas.</p>
+                    </div>
+                </article>
+
+                <!-- Card Valores -->
+                <article class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Nossos Valores</h3>
+                        <span class="badge badge-success">Princípios</span>
+                    </div>
+                    <div class="card-body">
+                        <ul style="list-style: disc; padding-left: var(--space-4); color: var(--neutral-700);">
+                            <li style="margin-bottom: var(--space-2);">Transparência</li>
+                            <li style="margin-bottom: var(--space-2);">Comprometimento</li>
+                            <li style="margin-bottom: var(--space-2);">Solidariedade</li>
+                            <li style="margin-bottom: var(--space-2);">Sustentabilidade</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section class="contato">
-            <h2>Entre em Contato</h2>
-            <address>
-                <p>Endereço: Rua das Flores, 123 - Centro, São Paulo - SP</p>
-                <p>Telefone: (11) 9999-9999</p>
-                <p>Email: contato@ongsolidaria.org.br</p>
-            </address>
+        <!-- Seção de Doação Adicionada -->
+        <section id="doar" style="background: var(--neutral-100); padding: var(--space-8) 0;">
+            <div class="container text-center">
+                <h2>Faça uma Doação</h2>
+                <p class="lead" style="margin-bottom: var(--space-6);">Sua contribuição transforma vidas</p>
+                
+                <div class="grid-3" style="max-width: 800px; margin: 0 auto;">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>PIX</h3>
+                            <p style="font-size: var(--font-size-sm);">CNPJ: 12.345.678/0001-90</p>
+                            <button class="btn btn-primary btn-sm" onclick="copiarPix()">Copiar PIX</button>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Transferência</h3>
+                            <p style="font-size: var(--font-size-sm);">Banco: 001 • Ag: 1234 • Cc: 56789-0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Presencial</h3>
+                            <p style="font-size: var(--font-size-sm);">Rua das Flores, 123 - Centro, SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Atualizado -->
+        <section class="contato" style="background: var(--primary-50); padding: var(--space-8) 0;">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="text-center">
+                        <h2>Entre em Contato</h2>
+                        <address style="font-style: normal; margin-top: var(--space-4);">
+                            <p>📧 contato@ongsolidaria.org.br</p>
+                            <p>📞 (11) 9999-9999</p>
+                            <p>📍 Rua das Flores, 123 - Centro, São Paulo - SP</p>
+                        </address>
+                    </div>
+                    <div class="text-center">
+                        <h3>Nos Acompanhe</h3>
+                        <div class="social-links" style="justify-content: center; margin-top: var(--space-4);">
+                            <a href="#" class="social-link">📘</a>
+                            <a href="#" class="social-link">📷</a>
+                            <a href="#" class="social-link">🐦</a>
+                            <a href="#" class="social-link">📹</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
+    <!-- Footer Atualizado -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+    function copiarPix() {
+        navigator.clipboard.writeText("12.345.678/0001-90");
+        alert("PIX copiado! CNPJ: 12.345.678/0001-90");
+    }
+    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

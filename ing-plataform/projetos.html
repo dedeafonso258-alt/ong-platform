@@ -7,73 +7,234 @@
     <title>ONG Solidária - Nossos Projetos</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>ONG Solidária</h1>
-            </div>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </nav>
+<body class="main-container">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>ONG <span>Solidária</span></h1>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projetos.html" class="nav-link active">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadastro.html" class="nav-link">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#doar" class="btn btn-donate">Doar Agora</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="intro-projetos">
-            <h1>Nossos Projetos Sociais</h1>
-            <p>Conheça nossas iniciativas e descubra como você pode fazer a diferença</p>
+        <!-- Introdução -->
+        <section class="intro-projetos container" style="padding: var(--space-8) 0;">
+            <div class="grid-12">
+                <div class="col-span-12 text-center">
+                    <h1>Nossos Projetos Sociais</h1>
+                    <p class="lead">Conheça nossas iniciativas e descubra como você pode fazer a diferença</p>
+                </div>
+            </div>
         </section>
 
-        <section class="projetos-lista">
-            <article class="projeto">
-                <h2>Educação para Todos</h2>
-                <p>Projeto que oferece reforço escolar e atividades extracurriculares para crianças e adolescentes.</p>
-                <h3>Como ser voluntário:</h3>
-                <ul>
-                    <li>Professores de diversas disciplinas</li>
-                    <li>Monitores para atividades recreativas</li>
-                    <li>Coordenadores pedagógicos</li>
-                </ul>
-            </article>
+        <!-- Lista de Projetos com Cards -->
+        <section class="projetos-lista container" style="padding-bottom: var(--space-8);">
+            <div class="grid-2">
+                <!-- Card Projeto 1 -->
+                <article class="card card-project">
+                    <div class="card-header">
+                        <div class="flex justify-between align-center">
+                            <h3 class="card-title">Educação para Todos</h3>
+                            <span class="badge badge-primary">Ativo</span>
+                        </div>
+                        <div class="tags" style="margin-top: var(--space-2);">
+                            <span class="tag">📚 Educação</span>
+                            <span class="tag">👧 Crianças</span>
+                            <span class="tag">🏫 Escola</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Projeto que oferece reforço escolar e atividades extracurriculares para crianças e adolescentes em situação de vulnerabilidade.</p>
+                        
+                        <div style="margin: var(--space-4) 0;">
+                            <h4 style="color: var(--primary-700); margin-bottom: var(--space-2);">Como ser voluntário:</h4>
+                            <ul style="list-style: disc; padding-left: var(--space-4); color: var(--neutral-700);">
+                                <li style="margin-bottom: var(--space-2);">Professores de diversas disciplinas</li>
+                                <li style="margin-bottom: var(--space-2);">Monitores para atividades recreativas</li>
+                                <li style="margin-bottom: var(--space-2);">Coordenadores pedagógicos</li>
+                            </ul>
+                        </div>
 
-            <article class="projeto">
-                <h2>Alimentação Solidária</h2>
-                <p>Distribuição de cestas básicas e refeições para famílias em situação de vulnerabilidade.</p>
-                <h3>Como ser voluntário:</h3>
-                <ul>
-                    <li>Ajudantes na organização e distribuição</li>
-                    <li>Cozinheiros</li>
-                    <li>Motoristas para entregas</li>
-                </ul>
-            </article>
+                        <div class="progress-bar" style="background: var(--neutral-200); border-radius: var(--border-radius-xl); height: 8px; margin: var(--space-4) 0;">
+                            <div style="background: var(--success-500); width: 75%; height: 100%; border-radius: var(--border-radius-xl);"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <small style="color: var(--neutral-600);">75% alcançado</small>
+                            <small style="color: var(--neutral-600);">Meta: 200 crianças</small>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="flex justify-between align-center">
+                            <span style="font-weight: var(--font-weight-semibold); color: var(--primary-600);">
+                                🗓 Segunda a Sexta, 14h-17h
+                            </span>
+                            <a href="cadastro.html" class="btn btn-primary btn-sm">
+                                Participar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card Projeto 2 -->
+                <article class="card card-project">
+                    <div class="card-header">
+                        <div class="flex justify-between align-center">
+                            <h3 class="card-title">Alimentação Solidária</h3>
+                            <span class="badge badge-primary">Ativo</span>
+                        </div>
+                        <div class="tags" style="margin-top: var(--space-2);">
+                            <span class="tag">🍲 Alimentação</span>
+                            <span class="tag">👨‍👩‍👧‍👦 Famílias</span>
+                            <span class="tag">🏘 Comunidade</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Distribuição de cestas básicas e refeições para famílias em situação de vulnerabilidade alimentar.</p>
+                        
+                        <div style="margin: var(--space-4) 0;">
+                            <h4 style="color: var(--primary-700); margin-bottom: var(--space-2);">Como ser voluntário:</h4>
+                            <ul style="list-style: disc; padding-left: var(--space-4); color: var(--neutral-700);">
+                                <li style="margin-bottom: var(--space-2);">Ajudantes na organização e distribuição</li>
+                                <li style="margin-bottom: var(--space-2);">Cozinheiros</li>
+                                <li style="margin-bottom: var(--space-2);">Motoristas para entregas</li>
+                            </ul>
+                        </div>
+
+                        <div class="progress-bar" style="background: var(--neutral-200); border-radius: var(--border-radius-xl); height: 8px; margin: var(--space-4) 0;">
+                            <div style="background: var(--warning-500); width: 45%; height: 100%; border-radius: var(--border-radius-xl);"></div>
+                        </div>
+                        <div class="flex justify-between">
+                            <small style="color: var(--neutral-600);">45% alcançado</small>
+                            <small style="color: var(--neutral-600);">Meta: 500 famílias</small>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="flex justify-between align-center">
+                            <span style="font-weight: var(--font-weight-semibold); color: var(--primary-600);">
+                                🗓 Sábados, 8h-12h
+                            </span>
+                            <a href="cadastro.html" class="btn btn-primary btn-sm">
+                                Participar
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section class="como-doar">
-            <h2>Como Fazer Doações</h2>
-            <article>
-                <h3>Doação Financeira</h3>
-                <p>Transferência bancária para:</p>
-                <p>Banco: 001 • Agência: 1234 • Conta: 56789-0</p>
-                <p>CNPJ: 12.345.678/0001-90</p>
-            </article>
-            <article>
-                <h3>Doação de Materiais</h3>
-                <p>Aceitamos:</p>
-                <ul>
-                    <li>Roupas em bom estado</li>
-                    <li>Alimentos não perecíveis</li>
-                    <li>Material escolar</li>
-                    <li>Produtos de higiene</li>
-                </ul>
-            </article>
+        <!-- Como Doar -->
+        <section id="doar" class="como-doar" style="background: var(--neutral-100); padding: var(--space-8) 0;">
+            <div class="container">
+                <div class="grid-12">
+                    <div class="col-span-12 text-center">
+                        <h2>Como Fazer Doações</h2>
+                        <p class="lead">Sua contribuição faz a diferença na vida de muitas pessoas</p>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top: var(--space-6); gap: var(--space-6);">
+                    <!-- Doação Financeira -->
+                    <article class="card">
+                        <div class="card-header text-center">
+                            <h3 class="card-title">💳 Doação Financeira</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="text-align: center; margin-bottom: var(--space-4);">
+                                Transferência bancária para:
+                            </p>
+                            <div style="background: var(--neutral-50); padding: var(--space-4); border-radius: var(--border-radius-md);">
+                                <p style="margin-bottom: var(--space-2);">
+                                    <strong>Banco:</strong> 001 • <strong>Agência:</strong> 1234
+                                </p>
+                                <p style="margin-bottom: var(--space-2);">
+                                    <strong>Conta:</strong> 56789-0
+                                </p>
+                                <p style="margin-bottom: 0;">
+                                    <strong>CNPJ:</strong> 12.345.678/0001-90
+                                </p>
+                            </div>
+                            <div class="text-center" style="margin-top: var(--space-4);">
+                                <button class="btn btn-primary" onclick="copiarPix()">
+                                    Copiar PIX
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Doação de Materiais -->
+                    <article class="card">
+                        <div class="card-header text-center">
+                            <h3 class="card-title">📦 Doação de Materiais</h3>
+                        </div>
+                        <div class="card-body">
+                            <p style="text-align: center; margin-bottom: var(--space-4);">
+                                Aceitamos os seguintes itens:
+                            </p>
+                            <div class="grid-2" style="gap: var(--space-2);">
+                                <span class="tag" style="justify-content: center;">👕 Roupas</span>
+                                <span class="tag" style="justify-content: center;">🍚 Alimentos</span>
+                                <span class="tag" style="justify-content: center;">📝 Material Escolar</span>
+                                <span class="tag" style="justify-content: center;">🧼 Higiene</span>
+                                <span class="tag" style="justify-content: center;">📚 Livros</span>
+                                <span class="tag" style="justify-content: center;">🎲 Brinquedos</span>
+                            </div>
+                            <div class="text-center" style="margin-top: var(--space-4);">
+                                <a href="cadastro.html" class="btn btn-outline">
+                                    Agendar Entrega
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+    function copiarPix() {
+        navigator.clipboard.writeText("12.345.678/0001-90");
+        alert("PIX copiado! CNPJ: 12.345.678/0001-90");
+    }
+    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

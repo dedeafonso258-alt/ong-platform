@@ -1,0 +1,146 @@
+/* ===== NAVEGAÇÃO RESPONSIVA ===== */
+/* Header Principal */
+.main-header {
+  background: white;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) 0;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.logo h1 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-700);
+  margin: 0;
+}
+
+.logo span {
+  color: var(--secondary-500);
+}
+
+/* Menu Principal - Desktop */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: var(--neutral-700);
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--primary-500);
+  background-color: var(--primary-50);
+}
+
+.nav-link.active {
+  color: var(--primary-500);
+  background-color: var(--primary-50);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: "▼";
+  font-size: var(--font-size-xs);
+  margin-left: var(--space-1);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  box-shadow: var(--shadow-lg);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-2) 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all var(--transition-normal);
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  display: block;
+  padding: var(--space-2) var(--space-4);
+  color: var(--neutral-700);
+  transition: all var(--transition-fast);
+}
+
+.dropdown-link:hover {
+  background-color: var(--primary-50);
+  color: var(--primary-500);
+}
+
+/* Menu Hambúrguer - Mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--neutral-700);
+  border-radius: 2px;
+  transition: all var(--transition-normal);
+}
+
+/* Estados do Menu Hambúrguer */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:n

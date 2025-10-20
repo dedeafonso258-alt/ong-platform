@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastre-se para ser voluntário ou doador">
+    <title>ONG Solidária - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="main-container">
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>ONG <span>Solidária</span></h1>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projetos.html" class="nav-link">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadastro.html" class="nav-link active">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projetos.html#doar" class="btn btn-donate">Doar Agora</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-cadastro container" style="padding: var(--space-8) 0;">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Cadastre-se</h1>
+                    <p>Preencha o formulário abaixo para se tornar um voluntário ou doador</p>
+                </div>
+
+                <form id="formCadastro" novalidate>
+                    <!-- Dados Pessoais -->
+                    <fieldset>
+                        <legend>👤 Dados Pessoais</legend>
+                        
+                        <div class="form-group">
+                            <label for="nome" class="form-label required">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" class="form-control" 
+                                   required minlength="3" maxlength="100"
+                                   placeholder="Digite seu nome completo">
+                            <span class="form-feedback"></span>
+                        </div>
+
+                        <div class="grid-2" style="gap: var(--space-4);">
+                            <div class="form-group">
+                                <label for="email" class="form-label required">E-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" 
+                                       required placeholder="seu@email.com">
+                                <span class="form-feedback"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="telefone" class="form-label required">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control" 
+                                       required pattern="\(\d{2}\)\s\d{4,5}-\d{4}" 
+                                       placeholder="(00) 00000-0000">
+                                <span class="form-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="grid-2" style="gap: var(--space-4);">
+                            <div class="form-group">
+                                <label for="cpf" class="form-label required">CPF</label>
+                                <input type="text" id="cpf" name="cpf" class="form-control" 
+                                       required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                                       placeholder="000.000.000-00">
+                                <span class="form-feedback"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nascimento" class="form-label required">Data de Nascimento</label>
+                                <input type="date" id="nascimento" name="nascimento" class="form-control" required>
+                                <span class="form-feedback"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Endereço -->
+                    <fieldset>
+                        <legend>📍 Endereço</legend>
+                        
+                        <div class="grid-2" style="gap: var(--space-4);">
+                            <div class="form-group">
+                                <label for="cep" class="form-label required">CEP</label>
+                                <input type="text" id="cep" name="cep" class="form-control" 
+                                       required pattern="\d{5}-\d{3}" 
+                                       placeholder="00000-000">
+                                <span class="form-feedback"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="estado" class="form-label required">Estado</label>
+                                <select id="estado" name="estado" class="form-control" required>
+                                    <option value="">Selecione seu estado...</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                                <span class="form-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="endereco" class="form-label required">Endereço Completo</label>
+                            <input type="text" id="endereco" name="endereco" class="form-control" 
+                                   required placeholder="Rua, número, complemento">
+                            <span class="form-feedback"></span>
+                        </div>
+
+                        <div class="grid-2" style="gap: var(--space-4);">
+                            <div class="form-group">
+                                <label for="cidade" class="form-label required">Cidade</label>
+                                <input type="text" id="cidade" name="cidade" class="form-control" required>
+                                <span class="form-feedback"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bairro" class="form-label required">Bairro</label>
+                                <input type="text" id="bairro" name="bairro" class="form-control" required>
+                                <span class="form-feedback"></span>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Como deseja ajudar? -->
+                    <fieldset>
+                        <legend>🤝 Como deseja ajudar?</legend>
+                        
+                        <div class="form-group">
+                            <p style="color: var(--neutral-600); margin-bottom: var(--space-4);">
+                                Selecione as formas de contribuição que tem interesse:
+                            </p>
+                            
+                            <div class="grid-3" style="gap: var(--space-3);">
+                                <label class="form-check">
+                                    <input type="checkbox" name="ajuda" value="voluntario" class="form-check-input">
+                                    <span class="form-check-label">
+                                        <strong>Voluntário</strong><br>
+                                        <small style="color: var(--neutral-500);">Doar tempo e habilidades</small>
+                                    </span>
+                                </label>
+                                
+                                <label class="form-check">
+                                    <input type="checkbox" name="ajuda" value="doador" class="form-check-input">
+                                    <span class="form-check-label">
+                                        <strong>Doador</strong><br>
+                                        <small style="color: var(--neutral-500);">Doar recursos financeiros</small>
+                                    </span>
+                                </label>
+                                
+                                <label class="form-check">
+                                    <input type="checkbox" name="ajuda" value="material" class="form-check-input">
+                                    <span class="form-check-label">
+                                        <strong>Material</strong><br>
+                                        <small style="color: var(--neutral-500);">Doar itens e materiais</small>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Áreas de Interesse -->
+                        <div class="form-group">
+                            <label class="form-label">Áreas de Interesse (opcional)</label>
+                            <div class="grid-2" style="gap: var(--space-2);">
+                                <label class="form-check">
+                                    <input type="checkbox" name="areas" value="educacao" class="form-check-input">
+                                    <span class="form-check-label">🎓 Educação</span>
+                                </label>
+                                <label class="form-check">
+                                    <input type="checkbox" name="areas" value="alimentacao" class="form-check-input">
+                                    <span class="form-check-label">🍲 Alimentação</span>
+                                </label>
+                                <label class="form-check">
+                                    <input type="checkbox" name="areas" value="saude" class="form-check-input">
+                                    <span class="form-check-label">🏥 Saúde</span>
+                                </label>
+                                <label class="form-check">
+                                    <input type="checkbox" name="areas" value="moradia" class="form-check-input">
+                                    <span class="form-check-label">🏠 Moradia</span>
+                                </label>
+                                <label class="form-check">
+                                    <input type="checkbox" name="areas" value="meio-ambiente" class="form-check-input">
+                                    <span class="form-check-label">🌱 Meio Ambiente</span>
+                                </label>
+                                <label class="form-check">
+                                    <input type="checkbox" name="areas" value="cultura" class="form-check-input">
+                                    <span class="form-check-label">🎭 Cultura</span>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Disponibilidade -->
+                    <fieldset>
+                        <legend>🕐 Disponibilidade (para voluntários)</legend>
+                        
+                        <div class="grid-2" style="gap: var(--space-4);">
+                            <div class="form-group">
+                                <label for="disponibilidade" class="form-label">Dias da Semana</label>
+                                <select id="disponibilidade" name="disponibilidade" class="form-control" multiple style="height: 120px;">
+                                    <option value="segunda">Segunda-feira</option>
+                                    <option value="terca">Terça-feira</option>
+                                    <option value="quarta">Quarta-feira</option>
+                                    <option value="quinta">Quinta-feira</option>
+                                    <option value="sexta">Sexta-feira</option>
+                                    <option value="sabado">Sábado</option>
+                                    <option value="domingo">Domingo</option>
+                                </select>
+                                <small style="color: var(--neutral-500);">Segure Ctrl para selecionar múltiplos dias</small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="periodo" class="form-label">Período do Dia</label>
+                                <select id="periodo" name="periodo" class="form-control">
+                                    <option value="">Selecione o período...</option>
+                                    <option value="manha">Manhã (8h-12h)</option>
+                                    <option value="tarde">Tarde (13h-17h)</option>
+                                    <option value="noite">Noite (18h-22h)</option>
+                                    <option value="integral">Integral</option>
+                                    <option value="finais">Finais de semana</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit" class="btn-submit">
+                        📨 Enviar Cadastro
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
