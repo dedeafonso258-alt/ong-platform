@@ -830,4 +830,57 @@ const styleSheet = document.createElement('style');
 styleSheet.textContent = dynamicStyles;
 document.head.appendChild(styleSheet);
 
+
 console.log('🎨 Estilos dinâmicos carregados');
+// ===== SISTEMA DE ACESSIBILIDADE =====
+function initializeAcessibilidade() {
+    console.log('♿ Sistema de acessibilidade inicializado');
+    
+    // Botão de alto contraste
+    createContrasteToggle();
+    
+    // Navegação por teclado
+    setupKeyboardNavigation();
+    
+    // Skip link
+    createSkipLink();
+}
+
+function createContrasteToggle() {
+    const toggleBtn = document.createElement('button');
+    toggleBtn.className = 'contraste-toggle';
+    toggleBtn.innerHTML = '♿ Alto Contraste';
+    toggleBtn.setAttribute('aria-label', 'Ativar modo de alto contraste');
+    toggleBtn.setAttribute('title', 'Ativar/desativar alto contraste');
+    
+    toggleBtn.addEventListener('click', function() {
+        document.body.classList.toggle('modo-alto-contraste');
+        const isActive = document.body.classList.contains('modo-alto-contraste');
+        this.innerHTML = isActive ? '♿ Contraste Normal' : '♿ Alto Contraste';
+        this.setAttribute('aria-label', isActive ? 'Desativar modo de alto contraste' : 'Ativar modo de alto contraste');
+    });
+    
+    document.body.appendChild(toggleBtn);
+}
+
+function setupKeyboardNavigation() {
+    // Navegação por tab
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Tab') {
+            document.body.classList.add('keyboard-navigation');
+        }
+    });
+}
+
+function createSkipLink() {
+    const skipLink = document.createElement('a');
+    skipLink.href = '#main-content';
+    skipLink.className = 'skip-link';
+    skipLink.textContent = 'Ir para o conteúdo principal';
+    document.body.insertBefore(skipLink, document.body.firstChild);
+}
+
+// Inicializar quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', function() {
+    initializeAcessibilidade();
+});
