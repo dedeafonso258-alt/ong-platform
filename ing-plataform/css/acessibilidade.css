@@ -1,0 +1,146 @@
+/* ===== ACESSIBILIDADE WCAG 2.1 AA ===== */
+
+/* ===== ALTO CONTRASTE ===== */
+.modo-alto-contraste {
+  --primary-500: #000000;
+  --primary-700: #000000;
+  --neutral-50: #ffffff;
+  --neutral-100: #f0f0f0;
+  --neutral-900: #000000;
+  --neutral-500: #666666;
+  --success-500: #006600;
+  --error-500: #990000;
+  
+  /* Garantir contraste mínimo de 4.5:1 */
+  color-scheme: light dark;
+}
+
+.modo-alto-contraste .card {
+  border: 2px solid #000000;
+  background: #ffffff;
+}
+
+.modo-alto-contraste .btn {
+  border: 2px solid #000000;
+}
+
+/* ===== FOCO VISÍVEL ===== */
+*:focus {
+  outline: 3px solid #005fcc !important;
+  outline-offset: 2px !important;
+}
+
+.btn:focus,
+.nav-link:focus,
+.form-control:focus {
+  outline: 3px solid #005fcc !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px rgba(0, 95, 204, 0.3) !important;
+}
+
+/* ===== CONTRASTE WCAG 2.1 AA ===== */
+.contraste-garantido {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+.texto-contraste {
+  color: #000000 !important;
+}
+
+/* ===== SUPORTE A LEITORES DE TELA ===== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.aria-live {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ===== NAVEGAÇÃO POR TECLADO ===== */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #000000;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 10000;
+  border: 2px solid #ffffff;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+
+/* ===== ESTADOS DE INTERAÇÃO ===== */
+.btn:hover,
+.nav-link:hover {
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* ===== FORMULÁRIOS ACESSÍVEIS ===== */
+.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control:invalid {
+  border-color: #990000;
+  background-color: #fff0f0;
+}
+
+.form-control:valid {
+  border-color: #006600;
+}
+
+.required::after {
+  content: " *";
+  color: #990000;
+}
+
+/* ===== ANIMAÇÕES REDUZIDAS ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== MODOS DE VISUALIZAÇÃO ===== */
+.contraste-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
