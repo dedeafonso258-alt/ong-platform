@@ -3,238 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça nossos projetos sociais e saiba como participar">
-    <title>ONG Solidária - Nossos Projetos</title>
+    <title>Projetos Sociais - ONG Plataforma</title>
+    <meta name="description" content="Conheça nossos projetos sociais de educação, alimentação e capacitação profissional. Saiba como ser voluntário ou fazer doações.">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="main-container">
-    <!-- Header -->
-    <header class="main-header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <h1>ONG <span>Solidária</span></h1>
-                </div>
-                
-                <button class="menu-toggle" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-                <ul class="nav-menu" id="navMenu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Início</a>
+    <header role="banner" class="header">
+        <nav class="nav" role="navigation" aria-label="Navegação principal">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">ONG Plataforma</span>
+                </a>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none">
+                        <a href="index.html" class="nav-link" role="menuitem">Início</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="projetos.html" class="nav-link active">Projetos</a>
+                    <li role="none">
+                        <a href="projetos.html" class="nav-link" role="menuitem" aria-current="page">Projetos Sociais</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="cadastro.html" class="nav-link">Cadastre-se</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#doar" class="btn btn-donate">Doar Agora</a>
+                    <li role="none">
+                        <a href="cadastro.html" class="nav-link" role="menuitem">Cadastro</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <!-- Introdução -->
-        <section class="intro-projetos container" style="padding: var(--space-8) 0;">
-            <div class="grid-12">
-                <div class="col-span-12 text-center">
-                    <h1>Nossos Projetos Sociais</h1>
-                    <p class="lead">Conheça nossas iniciativas e descubra como você pode fazer a diferença</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Lista de Projetos com Cards -->
-        <section class="projetos-lista container" style="padding-bottom: var(--space-8);">
-            <div class="grid-2">
-                <!-- Card Projeto 1 -->
-                <article class="card card-project">
-                    <div class="card-header">
-                        <div class="flex justify-between align-center">
-                            <h3 class="card-title">Educação para Todos</h3>
-                            <span class="badge badge-primary">Ativo</span>
-                        </div>
-                        <div class="tags" style="margin-top: var(--space-2);">
-                            <span class="tag">📚 Educação</span>
-                            <span class="tag">👧 Crianças</span>
-                            <span class="tag">🏫 Escola</span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <p>Projeto que oferece reforço escolar e atividades extracurriculares para crianças e adolescentes em situação de vulnerabilidade.</p>
-                        
-                        <div style="margin: var(--space-4) 0;">
-                            <h4 style="color: var(--primary-700); margin-bottom: var(--space-2);">Como ser voluntário:</h4>
-                            <ul style="list-style: disc; padding-left: var(--space-4); color: var(--neutral-700);">
-                                <li style="margin-bottom: var(--space-2);">Professores de diversas disciplinas</li>
-                                <li style="margin-bottom: var(--space-2);">Monitores para atividades recreativas</li>
-                                <li style="margin-bottom: var(--space-2);">Coordenadores pedagógicos</li>
-                            </ul>
-                        </div>
-
-                        <div class="progress-bar" style="background: var(--neutral-200); border-radius: var(--border-radius-xl); height: 8px; margin: var(--space-4) 0;">
-                            <div style="background: var(--success-500); width: 75%; height: 100%; border-radius: var(--border-radius-xl);"></div>
-                        </div>
-                        <div class="flex justify-between">
-                            <small style="color: var(--neutral-600);">75% alcançado</small>
-                            <small style="color: var(--neutral-600);">Meta: 200 crianças</small>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="flex justify-between align-center">
-                            <span style="font-weight: var(--font-weight-semibold); color: var(--primary-600);">
-                                🗓 Segunda a Sexta, 14h-17h
-                            </span>
-                            <a href="cadastro.html" class="btn btn-primary btn-sm">
-                                Participar
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Card Projeto 2 -->
-                <article class="card card-project">
-                    <div class="card-header">
-                        <div class="flex justify-between align-center">
-                            <h3 class="card-title">Alimentação Solidária</h3>
-                            <span class="badge badge-primary">Ativo</span>
-                        </div>
-                        <div class="tags" style="margin-top: var(--space-2);">
-                            <span class="tag">🍲 Alimentação</span>
-                            <span class="tag">👨‍👩‍👧‍👦 Famílias</span>
-                            <span class="tag">🏘 Comunidade</span>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <p>Distribuição de cestas básicas e refeições para famílias em situação de vulnerabilidade alimentar.</p>
-                        
-                        <div style="margin: var(--space-4) 0;">
-                            <h4 style="color: var(--primary-700); margin-bottom: var(--space-2);">Como ser voluntário:</h4>
-                            <ul style="list-style: disc; padding-left: var(--space-4); color: var(--neutral-700);">
-                                <li style="margin-bottom: var(--space-2);">Ajudantes na organização e distribuição</li>
-                                <li style="margin-bottom: var(--space-2);">Cozinheiros</li>
-                                <li style="margin-bottom: var(--space-2);">Motoristas para entregas</li>
-                            </ul>
-                        </div>
-
-                        <div class="progress-bar" style="background: var(--neutral-200); border-radius: var(--border-radius-xl); height: 8px; margin: var(--space-4) 0;">
-                            <div style="background: var(--warning-500); width: 45%; height: 100%; border-radius: var(--border-radius-xl);"></div>
-                        </div>
-                        <div class="flex justify-between">
-                            <small style="color: var(--neutral-600);">45% alcançado</small>
-                            <small style="color: var(--neutral-600);">Meta: 500 famílias</small>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <div class="flex justify-between align-center">
-                            <span style="font-weight: var(--font-weight-semibold); color: var(--primary-600);">
-                                🗓 Sábados, 8h-12h
-                            </span>
-                            <a href="cadastro.html" class="btn btn-primary btn-sm">
-                                Participar
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Como Doar -->
-        <section id="doar" class="como-doar" style="background: var(--neutral-100); padding: var(--space-8) 0;">
+    <main id="main-content" role="main">
+        <!-- Hero Projetos -->
+        <section class="page-hero" aria-labelledby="projects-hero-title">
             <div class="container">
-                <div class="grid-12">
-                    <div class="col-span-12 text-center">
-                        <h2>Como Fazer Doações</h2>
-                        <p class="lead">Sua contribuição faz a diferença na vida de muitas pessoas</p>
+                <h1 id="projects-hero-title" class="page-title">Nossos Projetos Sociais</h1>
+                <p class="page-subtitle">Conheça nossas iniciativas e descubra como você pode fazer a diferença</p>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="projects-section" aria-labelledby="all-projects-title">
+            <div class="container">
+                <h2 id="all-projects-title" class="section-title">Todos os Projetos</h2>
+                
+                <!-- Projeto Educação -->
+                <article id="educacao" class="project-detail" role="article" aria-labelledby="educacao-title">
+                    <div class="project-header">
+                        <h3 id="educacao-title" class="project-name">Educação para Todos</h3>
+                        <span class="project-badge" role="status">Ativo</span>
                     </div>
-                </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="images/projeto-educacao-detail.jpg" alt="Crianças em sala de aula com livros e materiais escolares, acompanhadas por professora voluntária" width="600" height="400">
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <strong>📍 Localização:</strong>
+                                    <span>São Paulo, SP</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>👥 Beneficiados:</strong>
+                                    <span>500 crianças e adolescentes</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>📅 Duração:</strong>
+                                    <span>Contínuo</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>🎯 Público:</strong>
+                                    <span>6-17 anos</span>
+                                </div>
+                            </div>
+                            <div class="project-description">
+                                <h4>Sobre o Projeto</h4>
+                                <p>
+                                    Oferecemos aulas de reforço escolar, informática, inglês e atividades extracurriculares 
+                                    para crianças e adolescentes em situação de vulnerabilidade social. Nosso objetivo é 
+                                    complementar a educação formal e abrir portas para um futuro melhor.
+                                </p>
+                                <h4>Atividades Desenvolvidas</h4>
+                                <ul role="list">
+                                    <li>Aulas de reforço em português e matemática</li>
+                                    <li>Oficinas de informática básica e avançada</li>
+                                    <li>Aulas de inglês comunicativo</li>
+                                    <li>Atividades esportivas e culturais</li>
+                                    <li>Acompanhamento pedagógico individual</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-                <div class="grid-2" style="margin-top: var(--space-6); gap: var(--space-6);">
-                    <!-- Doação Financeira -->
-                    <article class="card">
-                        <div class="card-header text-center">
-                            <h3 class="card-title">💳 Doação Financeira</h3>
+                <!-- Projeto Alimentação -->
+                <article id="alimentacao" class="project-detail" role="article" aria-labelledby="alimentacao-title">
+                    <div class="project-header">
+                        <h3 id="alimentacao-title" class="project-name">Alimentação Solidária</h3>
+                        <span class="project-badge" role="status">Ativo</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="images/projeto-alimentacao-detail.jpg" alt="Voluntários organizando e distribuindo cestas básicas para comunidade carente" width="600" height="400">
                         </div>
-                        <div class="card-body">
-                            <p style="text-align: center; margin-bottom: var(--space-4);">
-                                Transferência bancária para:
-                            </p>
-                            <div style="background: var(--neutral-50); padding: var(--space-4); border-radius: var(--border-radius-md);">
-                                <p style="margin-bottom: var(--space-2);">
-                                    <strong>Banco:</strong> 001 • <strong>Agência:</strong> 1234
-                                </p>
-                                <p style="margin-bottom: var(--space-2);">
-                                    <strong>Conta:</strong> 56789-0
-                                </p>
-                                <p style="margin-bottom: 0;">
-                                    <strong>CNPJ:</strong> 12.345.678/0001-90
-                                </p>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <strong>📍 Localização:</strong>
+                                    <span>Rio de Janeiro, RJ</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>👥 Beneficiados:</strong>
+                                    <span>300 famílias mensalmente</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>📅 Frequência:</strong>
+                                    <span>Distribuição mensal</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>🎯 Público:</strong>
+                                    <span>Famílias em insegurança alimentar</span>
+                                </div>
                             </div>
-                            <div class="text-center" style="margin-top: var(--space-4);">
-                                <button class="btn btn-primary" onclick="copiarPix()">
-                                    Copiar PIX
-                                </button>
+                            <div class="project-description">
+                                <h4>Sobre o Projeto</h4>
+                                <p>
+                                    Combatemos a fome e a desnutrição através da distribuição de cestas básicas, 
+                                    refeições nutritivas e orientação sobre alimentação saudável para famílias 
+                                    em situação de vulnerabilidade social.
+                                </p>
+                                <h4>Como Funciona</h4>
+                                <ul role="list">
+                                    <li>Distribuição mensal de cestas básicas</li>
+                                    <li>Refeitório comunitário com almoços gratuitos</li>
+                                    <li>Oficinas de aproveitamento integral de alimentos</li>
+                                    <li>Horta comunitária para produção própria</li>
+                                    <li>Acompanhamento nutricional</li>
+                                </ul>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
-                    <!-- Doação de Materiais -->
-                    <article class="card">
-                        <div class="card-header text-center">
-                            <h3 class="card-title">📦 Doação de Materiais</h3>
+                <!-- Projeto Oficinas -->
+                <article id="oficinas" class="project-detail" role="article" aria-labelledby="oficinas-title">
+                    <div class="project-header">
+                        <h3 id="oficinas-title" class="project-name">Oficinas Profissionalizantes</h3>
+                        <span class="project-badge" role="status">Ativo</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="images/projeto-oficina-detail.jpg" alt="Jovens aprendizes em oficina de marcenaria utilizando ferramentas e madeira" width="600" height="400">
                         </div>
-                        <div class="card-body">
-                            <p style="text-align: center; margin-bottom: var(--space-4);">
-                                Aceitamos os seguintes itens:
-                            </p>
-                            <div class="grid-2" style="gap: var(--space-2);">
-                                <span class="tag" style="justify-content: center;">👕 Roupas</span>
-                                <span class="tag" style="justify-content: center;">🍚 Alimentos</span>
-                                <span class="tag" style="justify-content: center;">📝 Material Escolar</span>
-                                <span class="tag" style="justify-content: center;">🧼 Higiene</span>
-                                <span class="tag" style="justify-content: center;">📚 Livros</span>
-                                <span class="tag" style="justify-content: center;">🎲 Brinquedos</span>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <div class="meta-item">
+                                    <strong>📍 Localização:</strong>
+                                    <span>Minas Gerais, MG</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>👥 Beneficiados:</strong>
+                                    <span>200 jovens/ano</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>📅 Cursos:</strong>
+                                    <span>Turmas semestrais</span>
+                                </div>
+                                <div class="meta-item">
+                                    <strong>🎯 Público:</strong>
+                                    <span>Jovens 16-25 anos</span>
+                                </div>
                             </div>
-                            <div class="text-center" style="margin-top: var(--space-4);">
-                                <a href="cadastro.html" class="btn btn-outline">
-                                    Agendar Entrega
-                                </a>
+                            <div class="project-description">
+                                <h4>Sobre o Projeto</h4>
+                                <p>
+                                    Capacitamos jovens para o mercado de trabalho através de cursos profissionalizantes 
+                                    gratuitos, oferecendo qualificação prática e oportunidades de emprego e renda.
+                                </p>
+                                <h4>Cursos Oferecidos</h4>
+                                <ul role="list">
+                                    <li>Marcenaria e Móveis Planejados</li>
+                                    <li>Costura Industrial e Modelagem</li>
+                                    <li>Manutenção de Celulares e Computadores</li>
+                                    <li>Gastronomia e Confeitaria</li>
+                                    <li>Marketing Digital e Vendas</li>
+                                </ul>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section id="doacoes" class="help-section" aria-labelledby="help-title">
+            <div class="container">
+                <h2 id="help-title" class="section-title">Como Você Pode Ajudar</h2>
+                <div class="help-options">
+                    <div class="help-card" role="region" aria-labelledby="voluntario-title">
+                        <h3 id="voluntario-title">👥 Seja Voluntário</h3>
+                        <p>Dedique seu tempo e talento para transformar vidas. Temos vagas para diversas habilidades:</p>
+                        <ul role="list">
+                            <li>Professores e educadores</li>
+                            <li>Assistentes sociais</li>
+                            <li>Cozinheiros e nutricionistas</li>
+                            <li>Instrutores de oficinas</li>
+                            <li>Administrativo e organização</li>
+                        </ul>
+                        <a href="cadastro.html" class="btn btn-primary">Quero ser Voluntário</a>
+                    </div>
+
+                    <div class="help-card" role="region" aria-labelledby="doacao-title">
+                        <h3 id="doacao-title">💝 Faça uma Doação</h3>
+                        <p>Sua contribuição financeira mantém nossos projetos e amplia nosso impacto:</p>
+                        <ul role="list">
+                            <li><strong>R$ 50</strong> - Alimenta uma criança por 1 semana</li>
+                            <li><strong>R$ 100</strong> - Kit material escolar para 1 aluno</li>
+                            <li><strong>R$ 200</strong> - Cesta básica para família</li>
+                            <li><strong>R$ 500</strong> - Bolsa curso profissionalizante</li>
+                        </ul>
+                        <div class="donation-actions">
+                            <button class="btn btn-secondary" onclick="alert('PIX: 123.456.789-00 (CNPJ ONG)')">Doar via PIX</button>
+                            <button class="btn btn-outline" onclick="alert('Transferência:\nBanco: 001\nAg: 1234\nCC: 56789-0')">Transferência</button>
+                        </div>
+                    </div>
+
+                    <div class="help-card" role="region" aria-labelledby="parceria-title">
+                        <h3 id="parceria-title">🤝 Seja Parceiro</h3>
+                        <p>Empresas e instituições podem apoiar de diversas formas:</p>
+                        <ul role="list">
+                            <li>Doação de materiais e equipamentos</li>
+                            <li>Programas de voluntariado corporativo</li>
+                            <li>Parcerias para capacitação</li>
+                            <li>Doações recorrentes</li>
+                            <li>Eventos beneficentes</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="alert('Entre em contato: parcerias@ongplataforma.org.br')">Quero ser Parceiro</button>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="main-footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">ONG Plataforma</h3>
+                    <p>Transformando vidas através da solidariedade desde 2013.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="YouTube">🎥 YouTube</a>
+                    </div>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
-                </div>
-                <div class="footer-legal">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Termos de Uso</a>
-                </div>
+                <p>&copy; 2024 ONG Plataforma. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-    function copiarPix() {
-        navigator.clipboard.writeText("12.345.678/0001-90");
-        alert("PIX copiado! CNPJ: 12.345.678/0001-90");
-    }
-    </script>
-    <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
