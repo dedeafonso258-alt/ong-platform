@@ -3,166 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma para ONGs - Conectando pessoas a causas sociais">
-    <title>ONG Solidária - Página Inicial</title>
+    <title>ONG Plataforma - Transformando Vidas através da Solidariedade</title>
+    <meta name="description" content="ONG dedicada a transformar vidas através de projetos sociais, voluntariado e doações. Junte-se a nós para fazer a diferença!">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="main-container">
-    <!-- Header Atualizado -->
-    <header class="main-header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <h1>ONG <span>Solidária</span></h1>
-                </div>
-                
-                <!-- Menu Hambúrguer -->
-                <button class="menu-toggle" id="menuToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+<body>
+    <!-- Skip Navigation para leitores de tela -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
-                <!-- Navegação -->
-                <ul class="nav-menu" id="navMenu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Início</a>
+    <header role="banner" class="header">
+        <nav class="nav" role="navigation" aria-label="Navegação principal">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">ONG Plataforma</span>
+                </a>
+                
+                <!-- Menu Desktop -->
+                <ul class="nav-menu" role="menubar">
+                    <li role="none">
+                        <a href="index.html" class="nav-link" role="menuitem" aria-current="page">Início</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="projetos.html" class="nav-link">Projetos</a>
+                    <li role="none">
+                        <a href="projetos.html" class="nav-link" role="menuitem">Projetos Sociais</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="cadastro.html" class="nav-link">Cadastre-se</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="projetos.html#doar" class="btn btn-donate">Doar Agora</a>
+                    <li role="none">
+                        <a href="cadastro.html" class="nav-link" role="menuitem">Cadastro</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+
+                <!-- Menu Mobile Hambúrguer -->
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <!-- Hero Section Atualizada -->
-        <section class="hero" style="background: linear-gradient(135deg, var(--primary-500), var(--primary-700)); color: white; padding: var(--space-12) 0; text-align: center;">
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-title">
             <div class="container">
-                <div class="grid">
-                    <div class="col-span-12 text-center">
-                        <h1 style="font-size: var(--font-size-5xl); margin-bottom: var(--space-4);">
-                            Transformando vidas através da solidariedade
-                        </h1>
-                        <p class="lead" style="font-size: var(--font-size-xl); margin-bottom: var(--space-6);">
-                            Há mais de 10 anos atuando em comunidades carentes
-                        </p>
-                        <a href="projetos.html" class="btn btn-secondary btn-lg">
-                            Conheça nossos projetos
-                        </a>
+                <div class="hero-content">
+                    <h1 id="hero-title" class="hero-title">Transformando Vidas através da Solidariedade</h1>
+                    <p class="hero-description">
+                        Há mais de 10 anos atuando em comunidades carentes, oferecendo educação, alimentação e oportunidades para um futuro melhor.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="projetos.html" class="btn btn-primary">Conhecer Projetos</a>
+                        <a href="cadastro.html" class="btn btn-secondary">Quero Ajudar</a>
                     </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-image.jpg" alt="Crianças sorridentes participando de atividades educativas na ONG" width="600" height="400">
                 </div>
             </div>
         </section>
 
-        <!-- Sobre Nós com Grid -->
-        <section class="sobre container" style="padding: var(--space-8) 0;">
-            <div class="grid-12">
-                <div class="col-span-12 text-center">
-                    <h2>Sobre Nossa Organização</h2>
-                    <p class="lead">Trabalhamos por um mundo mais justo e solidário</p>
-                </div>
-            </div>
-
-            <div class="grid-3" style="margin-top: var(--space-6);">
-                <!-- Card Missão -->
-                <article class="card card-featured">
-                    <div class="card-header">
-                        <h3 class="card-title">Nossa Missão</h3>
-                        <span class="badge badge-primary">Propósito</span>
-                    </div>
-                    <div class="card-body">
-                        <p>Promover o desenvolvimento social através de projetos educacionais, de saúde e geração de renda em comunidades vulneráveis.</p>
-                    </div>
-                </article>
-
-                <!-- Card Visão -->
-                <article class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Nossa Visão</h3>
-                        <span class="badge badge-secondary">Futuro</span>
-                    </div>
-                    <div class="card-body">
-                        <p>Ser referência em transformação social no Brasil até 2030, impactando positivamente a vida de 1 milhão de pessoas.</p>
-                    </div>
-                </article>
-
-                <!-- Card Valores -->
-                <article class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Nossos Valores</h3>
-                        <span class="badge badge-success">Princípios</span>
-                    </div>
-                    <div class="card-body">
-                        <ul style="list-style: disc; padding-left: var(--space-4); color: var(--neutral-700);">
-                            <li style="margin-bottom: var(--space-2);">Transparência</li>
-                            <li style="margin-bottom: var(--space-2);">Comprometimento</li>
-                            <li style="margin-bottom: var(--space-2);">Solidariedade</li>
-                            <li style="margin-bottom: var(--space-2);">Sustentabilidade</li>
+        <!-- Sobre Nós -->
+        <section class="about" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">Sobre Nossa Organização</h2>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p>
+                            Fundada em 2013, a ONG Plataforma nasceu do sonho de transformar realidades através da educação e inclusão social. 
+                            Atuamos em 5 estados brasileiros, impactando mais de 10.000 vidas diretamente.
+                        </p>
+                        <ul class="about-list" role="list">
+                            <li>📍 Atendimento em 15 comunidades</li>
+                            <li>🎓 5.000+ crianças e adolescentes educados</li>
+                            <li>❤ 2.000+ voluntários cadastrados</li>
+                            <li>🏆 Reconhecida como melhor ONG de 2023</li>
                         </ul>
                     </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Seção de Doação Adicionada -->
-        <section id="doar" style="background: var(--neutral-100); padding: var(--space-8) 0;">
-            <div class="container text-center">
-                <h2>Faça uma Doação</h2>
-                <p class="lead" style="margin-bottom: var(--space-6);">Sua contribuição transforma vidas</p>
-                
-                <div class="grid-3" style="max-width: 800px; margin: 0 auto;">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>PIX</h3>
-                            <p style="font-size: var(--font-size-sm);">CNPJ: 12.345.678/0001-90</p>
-                            <button class="btn btn-primary btn-sm" onclick="copiarPix()">Copiar PIX</button>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>Transferência</h3>
-                            <p style="font-size: var(--font-size-sm);">Banco: 001 • Ag: 1234 • Cc: 56789-0</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>Presencial</h3>
-                            <p style="font-size: var(--font-size-sm);">Rua das Flores, 123 - Centro, SP</p>
-                        </div>
+                    <div class="about-image">
+                        <img src="images/about-image.jpg" alt="Equipe de voluntários da ONG organizando doações e materiais" width="500" height="350">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contato Atualizado -->
-        <section class="contato" style="background: var(--primary-50); padding: var(--space-8) 0;">
+        <!-- Projetos em Destaque -->
+        <section class="featured-projects" aria-labelledby="projects-title">
             <div class="container">
-                <div class="grid-2">
-                    <div class="text-center">
-                        <h2>Entre em Contato</h2>
-                        <address style="font-style: normal; margin-top: var(--space-4);">
-                            <p>📧 contato@ongsolidaria.org.br</p>
-                            <p>📞 (11) 9999-9999</p>
+                <h2 id="projects-title" class="section-title">Projetos em Destaque</h2>
+                <div class="projects-grid">
+                    <article class="project-card" role="article">
+                        <div class="card-image">
+                            <img src="images/projeto-educacao.jpg" alt="Crianças estudando em sala de aula com materiais educativos" width="400" height="250">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Educação para Todos</h3>
+                            <p class="card-description">
+                                Aulas de reforço escolar, informática e inglês para crianças e adolescentes em situação de vulnerabilidade.
+                            </p>
+                            <div class="card-meta">
+                                <span class="project-location">📍 São Paulo, SP</span>
+                                <span class="project-beneficiaries">👥 500 beneficiados</span>
+                            </div>
+                            <a href="projetos.html#educacao" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" role="article">
+                        <div class="card-image">
+                            <img src="images/projeto-alimentacao.jpg" alt="Voluntários distribuindo cestas básicas para famílias carentes" width="400" height="250">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Alimentação Solidária</h3>
+                            <p class="card-description">
+                                Distribuição mensal de cestas básicas e refeições nutritivas para famílias em situação de insegurança alimentar.
+                            </p>
+                            <div class="card-meta">
+                                <span class="project-location">📍 Rio de Janeiro, RJ</span>
+                                <span class="project-beneficiaries">👥 300 famílias</span>
+                            </div>
+                            <a href="projetos.html#alimentacao" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" role="article">
+                        <div class="card-image">
+                            <img src="images/projeto-oficina.jpg" alt="Jovens participando de oficina profissionalizante de marcenaria" width="400" height="250">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Oficinas Profissionalizantes</h3>
+                            <p class="card-description">
+                                Cursos de capacitação profissional para jovens e adultos, incluindo marcenaria, costura e tecnologia.
+                            </p>
+                            <div class="card-meta">
+                                <span class="project-location">📍 Minas Gerais, MG</span>
+                                <span class="project-beneficiaries">👥 200 alunos/ano</span>
+                            </div>
+                            <a href="projetos.html#oficinas" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Entre em Contato</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Nossos Canais</h3>
+                        <address class="contact-details">
+                            <p>📧 <a href="mailto:contato@ongplataforma.org.br">contato@ongplataforma.org.br</a></p>
+                            <p>📞 <a href="tel:+5511999999999">(11) 99999-9999</a></p>
                             <p>📍 Rua das Flores, 123 - Centro, São Paulo - SP</p>
+                            <p>🕒 Segunda a Sexta, 8h às 18h</p>
                         </address>
                     </div>
-                    <div class="text-center">
-                        <h3>Nos Acompanhe</h3>
-                        <div class="social-links" style="justify-content: center; margin-top: var(--space-4);">
-                            <a href="#" class="social-link">📘</a>
-                            <a href="#" class="social-link">📷</a>
-                            <a href="#" class="social-link">🐦</a>
-                            <a href="#" class="social-link">📹</a>
+                    <div class="contact-actions">
+                        <h3 class="contact-subtitle">Como Você Pode Ajudar?</h3>
+                        <div class="action-buttons">
+                            <a href="cadastro.html" class="btn btn-primary">Seja Voluntário</a>
+                            <a href="projetos.html#doacoes" class="btn btn-secondary">Fazer Doação</a>
+                            <button class="btn btn-outline" onclick="alert('WhatsApp: (11) 99999-9999')">Falar no WhatsApp</button>
                         </div>
                     </div>
                 </div>
@@ -170,27 +169,36 @@
         </section>
     </main>
 
-    <!-- Footer Atualizado -->
-    <footer class="main-footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">ONG Plataforma</h3>
+                    <p>Transformando vidas através da solidariedade desde 2013.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links" role="list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘 Facebook</a>
+                        <a href="#" aria-label="Instagram">📷 Instagram</a>
+                        <a href="#" aria-label="YouTube">🎥 YouTube</a>
+                    </div>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <div class="footer-copyright">
-                    <p>&copy; 2024 ONG Solidária. Todos os direitos reservados.</p>
-                </div>
-                <div class="footer-legal">
-                    <a href="#">Política de Privacidade</a>
-                    <a href="#">Termos de Uso</a>
-                </div>
+                <p>&copy; 2024 ONG Plataforma. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-    function copiarPix() {
-        navigator.clipboard.writeText("12.345.678/0001-90");
-        alert("PIX copiado! CNPJ: 12.345.678/0001-90");
-    }
-    </script>
-    <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
