@@ -1,1 +1,28 @@
 
+{
+  "name": "ong-platform",
+  "version": "1.0.0",
+  "description": "Plataforma web para ONG - Projeto universitário",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "minify-css": "cleancss -o css/style.min.css css/style.css",
+    "minify-js": "uglifyjs js/app.js -o js/app.min.js -c -m && uglifyjs js/validacao.js -o js/validacao.min.js -c -m",
+    "optimize-images": "node optimize-images.js",
+    "deploy": "npm run minify-css && npm run minify-js && npm run optimize-images"
+  },
+  "keywords": [
+    "ong",
+    "voluntariado",
+    "projeto-social",
+    "acessibilidade",
+    "frontend"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0",
+    "uglify-js": "^3.17.4",
+    "imagemin-cli": "^7.0.0"
+  }
+}
