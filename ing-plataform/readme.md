@@ -35,7 +35,7 @@ Projeto desenvolvido para a faculdade como trabalho de conclusão da disciplina 
 ### 📱 Responsividade
 - 5 breakpoints otimizados
 - Mobile-first approach
-- Menu hambúguer responsivo
+- Menu hambúrguer responsivo
 - Grid system customizado (12 colunas)
 - Flexbox para componentes internos
 
@@ -63,6 +63,8 @@ ong-platform/
 ├── 📄 index.html              # Página inicial
 ├── 📄 projetos.html           # Projetos sociais
 ├── 📄 cadastro.html           # Formulário de cadastro
+├── 📄 404.html               # Página de erro personalizada
+├── 📄 .nojekyll              # Configuração GitHub Pages
 ├── 📂 css/
 │   ├── 🎨 style.css           # CSS completo com variáveis
 │   └── ⚡ style.min.css       # CSS minificado (25% menor)
@@ -99,12 +101,32 @@ ong-platform/
 Sistema modular baseado em 8px:
 - `8px`, `16px`, `24px`, `32px`, `48px`, `64px`
 
-## ⚙ Scripts de Build
+## 🚀 Como Executar o Projeto
+
+### 🌐 Opção 1: GitHub Pages
+- **Site Oficial:** [https://dedeafonso258-alt.github.io/ong-platform/](https://dedeafonso258-alt.github.io/ong-platform/)
+
+### 💻 Opção 2: Execução Local
+1. **Baixe o projeto:**
+   bash
+   git clone https://github.com/dedeafonso258-alt/ong-platform.git
+
+1. Abra o arquivo index.html no navegador
+2. Todas as funcionalidades estarão disponíveis
+
+🔧 Opção 3: Build Completo
 
 bash
 # Instalar dependências (se necessário)
 npm install
 
+# Build de produção
+npm run deploy
+
+
+⚙ Scripts de Build
+
+bash
 # Minificar CSS
 npm run minify-css
 
@@ -116,7 +138,7 @@ npm run build
 
 # Deploy (minifica tudo)
 npm run deploy
-
+```
 
 ♿ Checklist de Acessibilidade
 
@@ -148,21 +170,6 @@ npm run deploy
 · Títulos descritivos
 · Linguagem definida
 
-🌐 Deploy e Hospedagem
-
-O projeto está configurado para deploy em qualquer serviço de hospedagem estática:
-
-· GitHub Pages
-· Netlify
-· Vercel
-· Firebase Hosting
-
-Passos para Deploy:
-
-1. Fazer build do projeto: npm run deploy
-2. Fazer upload dos arquivos para o serviço de hospedagem
-3. Configurar domínio customizado (opcional)
-
 👥 Estratégia Git/GitFlow
 
 Branches Principais
@@ -174,7 +181,6 @@ Branches de Funcionalidade
 
 · feature/* - Novas funcionalidades
 · hotfix/* - Correções críticas
-· release/* - Preparação para produção
 
 Convenção de Commits
 
@@ -207,8 +213,10 @@ Este projeto foi desenvolvido para fins educacionais como trabalho universitári
 
 ---
 
+🌐 Site Oficial: https://dedeafonso258-alt.github.io/ong-platform/
+
+📂 Repositório: https://github.com/dedeafonso258-alt/ong-platform
+
 Desenvolvido com ❤ para fazer a diferença 🌟
 
-Última atualização: Dezembro 2024
-
-
+Última atualização: Novembro 2025
