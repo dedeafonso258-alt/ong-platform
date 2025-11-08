@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', function() {
     Acessibilidade.init();
     SPAManager.init();
     
-    // Menu mobile
+    // Menu mobile - CÓDIGO CORRIGIDO AQUI!
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
@@ -456,7 +456,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Fechar menu ao clicar fora
+    // Fechar menu ao clicar fora - CÓDIGO CORRIGIDO AQUI!
     document.addEventListener('click', function(e) {
         if (menuToggle && navMenu && !e.target.closest('.nav-container')) {
             menuToggle.setAttribute('aria-expanded', 'false');
